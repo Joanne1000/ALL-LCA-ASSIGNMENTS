@@ -1,0 +1,114 @@
+1)INPUT:
+my_dict={1:"Nandini",2:"Ishika",3:"Nikhil",4:"Manas",5:"Reeva"}
+my_dict[5]="Joanne"
+my_dict.pop(2)
+print(my_dict)
+OUTPUT:
+{1: 'Nandini', 3: 'Nikhil', 4: 'Manas', 5: 'Joanne'}
+
+2)INPUT:
+roll_numbers=[1,2,3,4]
+names=['nandini','ishika','joanne','reeva']
+student_dict=dict(zip(roll_numbers,names))
+print(student_dict)
+OUTPUT:
+{1: 'nandini', 2: 'ishika', 3: 'joanne', 4: 'reeva'}
+
+3)INPUT:
+my_dict={'name':'yash','rollno':12,'city':'mumbai'}
+sorted_dict=sorted(my_dict)
+print("Sorted elements:", sorted_dict)
+OUTPUT:
+Sorted elements: ['city', 'name', 'rollno']
+
+4)INPUT:
+my_dict={'name':'yash','rollno':12,'city':'mumbai'}
+keys_list=list(my_dict.keys())
+values_list=list(my_dict.values())
+print("list of keys",keys_list)
+print("list of values",values_list)
+OUTPUT:
+list of keys ['name', 'rollno', 'city']
+list of values ['yash', 12, 'mumbai']
+
+5)INPUT:
+my_dict={"marks1":23,"marks2":123,"marks3":43,"marks4":13,"marks5":139,}
+values=list(my_dict.values())
+mean=sum(values)/len(values)
+print("mean is:",mean)
+OUTPUT:
+mean is: 68.2
+
+6)INPUT:
+my_dict={'name':['yash','neel','dev'],
+         'rollno':[11,12,13],
+        'marks':[98,56,78]
+        }
+print('Name', my_dict['name'][2])
+print('Roll Number', my_dict['rollno'][1])
+print('Greatest marks', max(my_dict['marks']))
+OUPUT:
+Name dev
+Roll Number 12
+Greatest marks 98
+
+7)INPUT:
+str1=input("enter a string:")
+frequency={}
+for char in str1:
+    if char in frequency:
+        frequency[char]=frequency[char]+1
+    else:
+        frequency[char]=1
+print("frequency of each character is:")
+print(frequency)
+OUTPUT:
+enter a string: this is a character frequency calculator
+frequency of each character is:
+{'t': 3, 'h': 2, 'i': 2, 's': 2, ' ': 5, 'a': 5, 'c': 5, 'r': 4, 'e': 3, 'f': 1, 'q': 1, 'u': 2, 'n': 1, 'y': 1, 'l': 2, 'o': 1}
+
+8)INPUT:
+numer=int(input("Enter the numerator:"))
+denom=int(input("Enter the denominator:"))
+quotient=numer//denom
+remain=numer%denom
+result=(quotient,remain)
+print("quotient and remainder are", result)
+OUTPUT:
+Enter the numerator: 25
+Enter the denominator: 4
+quotient and remainder are (6, 1)
+
+9)INPUT:
+import datetime
+print("enter first date")
+d1=int(input("enter date 1"))
+m1=int(input("enter month 1"))
+y1=int(input("enter year 1"))
+date_tuple1=(d1,m1,y1)
+print("enter second date")
+d2=int(input("enter date 2"))
+m2=int(input("enter month 2"))
+y2=int(input("enter year 2"))
+date_tuple2=(d2,m2,y2)
+
+date1=date(y1,m1,d1)
+date2=date(y2,m2,d2)
+days_difference=abs((date2-date1).date)
+print("First Date Tuple:", date_tuple1)
+print("Second Date Tuple:",date_tuple2)
+print("Number of Days between 2 dates", days_difference)
+
+OUTPUT:
+enter first dats:
+enter day:1
+enter month:1
+enter year:2025
+
+enter second date:
+enter day:10
+enter month:1
+enter year:2025
+First Date Tuple:(1,1,2025)
+Second Date Tuple:(10,1,2025)
+Number of Days between 2 dates:9
