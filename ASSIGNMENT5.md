@@ -37,7 +37,8 @@ else:
 OUTPUT:
 YES! We have a match!
 
-INPUT:import re
+INPUT:
+import re
 
 def check_string(s):
     pattern = "^[A-Za-z0-9]+$"  #^=start,$=end,+=one or more
